@@ -67,6 +67,7 @@ border-radius:50%;
 border:4px solid #38bdf8;
 margin-bottom:20px;
 object-fit:cover;
+object-position: center top;
 }
 
 .hero h1{
@@ -259,6 +260,36 @@ drop-shadow(0 0 2px #0f172a)
 drop-shadow(0 0 10px rgba(77,182,172,1))
 drop-shadow(0 0 18px rgba(77,182,172,0.6));
 }
+
+.contact {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 60px 20px;
+    text-align: center;
+    color: #e2e8f0;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+
+.contact-info p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: #38bdf8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
 </style>
 
 </head>
@@ -284,7 +315,7 @@ drop-shadow(0 0 18px rgba(77,182,172,0.6));
 
 <section class="hero">
 
-<img class="profile-img" src="https://picsum.photos/300">
+<img class="profile-img" src="images/foto-cahyo.jpg">
 
 <h1>Hi I'm <span>Cahyo Purnomo</span></h1>
 
@@ -360,11 +391,19 @@ Software Engineer
 </div>
 
 <div class="tech-card">
+<i class="devicon-laravel-plain colored"></i>Laravel
+</div>
+
+<div class="tech-card">
 <i class="devicon-nodejs-plain colored"></i>Node.js
 </div>
 
 <div class="tech-card">
-<i class="devicon-javascript-plain colored"></i>JavaScript
+<i class="devicon-jquery-plain colored"></i>JQuery
+</div>
+
+<div class="tech-card">
+<i class="devicon-selenium-plain colored"></i>Selenium
 </div>
 
 <div class="tech-card">
@@ -376,6 +415,10 @@ Software Engineer
 </div>
 
 <div class="tech-card">
+<i class="devicon-microsoftsqlserver-plain colored"></i>SQL Server
+</div>
+
+<div class="tech-card">
 <i class="devicon-linux-plain colored linux-icon"></i>Linux
 </div>
 
@@ -384,20 +427,7 @@ Software Engineer
 </div>
 
 <div class="tech-card">
-<i class="devicon-microsoftsqlserver-plain colored"></i>SQL Server
-</div>
-
-<div class="tech-card">
-<i class="devicon-laravel-plain colored"></i>Laravel
-</div>
-
-<div class="tech-card">
 <i class="fa-solid fa-diagram-project colored"></i>Workflow
-</div>
-
-
-<div class="tech-card">
-<i class="devicon-jquery-plain colored"></i>JQuery
 </div>
 
 </div>
@@ -674,16 +704,15 @@ and maintainability.
 <!-- CONTACT -->
 
 <section class="contact">
+    <h2>📬 Contact</h2>
 
-<h2>📬 Contact</h2>
-
-<p>Email: c.purnomo@email.com</p>
-<p>Whatsapp: <a href="https://wa.me/6287872592559">+62 878-7259-2559</a></p>
-<p>LinkedIn: <a href="https://linkedin.com/in/cahyop">linkedin.com/in/cahyop</a></p>
-<p>GitHub: <a href="https://github.com/cahyopurnomo">https://github.com/cahyopurnomo</a></p>
-
+    <div class="contact-info">
+        <p>Email: <a href="mailto:c.purnomo@email.com">c.purnomo@email.com</a></p>
+        <p>Whatsapp: <a href="#">+62 878-7259-2559</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/cahyop</a></p>
+        <p>GitHub: <a href="#">github.com/cahyopurnomo</a></p>
+    </div>
 </section>
-
 <footer>
 
 © 2026 Cahyo Purnomo
