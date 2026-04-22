@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cahyo Purnomo | Senior Software Engineer</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+position:sticky;
+top:0;
+background:#020617;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+nav a{
+text-decoration:none;
+color:#e2e8f0;
+font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:90px 20px;
+background:linear-gradient(135deg,#020617,#1e293b);
+}
+
+.profile-img{
+width:140px;
+height:140px;
+border-radius:50%;
+border:4px solid #38bdf8;
+margin-bottom:20px;
+object-fit:cover;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:30px;
+}
+
+/* GRID */
+
+.tech-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:20px;
+}
+
+/* CARD */
+
+.tech-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.tech-card i{
+font-size:38px;
+color:#38bdf8;
+margin-bottom:10px;
+display:block;
+}
+
+/* ACHIEVEMENTS */
+
+.achievements{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.achievement{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+/* TIMELINE */
+
+.timeline{
+border-left:3px solid #38bdf8;
+padding-left:25px;
+}
+
+.timeline-item{
+margin-bottom:25px;
+}
+
+.timeline-item h4{
+color:#38bdf8;
+}
+
+/* PROJECT */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.project{
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+}
+
+.project img{
+width:100%;
+height:200px;
+object-fit:cover;
+object-position:center;
+display:block;
+}
+.project-content{
+padding:20px;
+}
+
+.project-meta{
+font-size:14px;
+margin-top:8px;
+}
+
+/* EXPERIENCE */
+.experience-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.experience-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+transition:all .3s;
+}
+
+.experience-card:hover{
+transform:translateY(-5px);
+}
+
+.experience-card h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.experience-card p{
+font-size:14px;
+line-height:1.6;
+color:#cbd5f5;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+padding:60px 20px;
+background:#020617;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+opacity:0.7;
+}
+
+/*
+.tech-card i{
+font-size:48px;
+margin-bottom:10px;
+}
+*/
+
+.tech-card i{
+font-size:52px;
+margin-bottom:12px;
+display:block;
+transition:0.3s ease;
+filter: drop-shadow(0 6px 10px rgba(0,0,0,0.4));
+}
+
+.tech-card:hover i{
+transform: scale(1.1);
+filter: drop-shadow(0 0 12px rgba(56,189,248,0.8));
+}
+
+.linux-icon{
+color:#facc15 !important;
+filter: drop-shadow(0 0 10px rgba(250,204,21,0.8));
+}
+
+.mariadb-icon {
+  color: #00c2a8;
+  -webkit-text-stroke: 0.5px #007f73;
+  text-shadow: none;
+  font-weight: bold;
+}
+
+/* hover effect */
+.tech-card:hover .mariadb-icon{
+transform:scale(1.1);
+filter:
+drop-shadow(0 0 2px #0f172a)
+drop-shadow(0 0 10px rgba(77,182,172,1))
+drop-shadow(0 0 18px rgba(77,182,172,0.6));
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div><b>Cahyo.dev</b></div>
+
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">Skills</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img class="profile-img" src="https://picsum.photos/300">
+
+<h1>Hi I'm <span>Cahyo Purnomo</span></h1>
+
+<p>Senior Software Engineer • Backend Specialist • System Architect</p>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="container">
+
+<h2 class="section-title">👨‍💻 About</h2>
+
+<p>
+Senior software developer with 20+ years experience in backend engineering,
+enterprise systems, ERP development and automation platforms.
+Specialized in designing scalable business systems and database architecture.
+</p>
+
+</section>
+
+<!-- PROFESSIONAL EXPERTISE -->
+
+<section class="container">
+
+<h2 class="section-title">💼 Professional Expertise</h2>
+
+<div class="tech-grid">
+
+<div class="tech-card">
+<i class="fa-solid fa-code"></i>
+PHP Developer
+</div>
+
+<div class="tech-card">
+<i class="fa-solid fa-server"></i>
+Backend Developer
+</div>
+
+<div class="tech-card">
+<i class="fa-solid fa-sitemap"></i>
+System Architect
+</div>
+
+<div class="tech-card">
+<i class="fa-solid fa-chart-line"></i>
+System Analyst
+</div>
+
+<div class="tech-card">
+<i class="fa-solid fa-laptop-code"></i>
+Software Engineer
+</div>
+
+</div>
+
+</section>
+
+<!-- TECH STACK -->
+
+<section class="container">
+
+<h2 class="section-title">⚙️ Technical Skills</h2>
+
+<div class="tech-grid">
+
+<div class="tech-card">
+<i class="devicon-php-plain colored"></i>PHP
+</div>
+
+<div class="tech-card">
+<i class="devicon-codeigniter-plain colored"></i>CodeIgniter
+</div>
+
+<div class="tech-card">
+<i class="devicon-nodejs-plain colored"></i>Node.js
+</div>
+
+<div class="tech-card">
+<i class="devicon-javascript-plain colored"></i>JavaScript
+</div>
+
+<div class="tech-card">
+<i class="devicon-mysql-plain colored"></i>MySQL
+</div>
+
+<div class="tech-card">
+<i class="devicon-mariadb-plain colored mariadb-icon""></i>MariaDB
+</div>
+
+<div class="tech-card">
+<i class="devicon-linux-plain colored linux-icon"></i>Linux
+</div>
+
+<div class="tech-card">
+<i class="devicon-docker-plain colored"></i>Docker
+</div>
+
+<div class="tech-card">
+<i class="devicon-microsoftsqlserver-plain colored"></i>SQL Server
+</div>
+
+<div class="tech-card">
+<i class="devicon-laravel-plain colored"></i>Laravel
+</div>
+
+<div class="tech-card">
+<i class="fa-solid fa-diagram-project colored"></i>Workflow
+</div>
+
+
+<div class="tech-card">
+<i class="devicon-jquery-plain colored"></i>JQuery
+</div>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section class="container">
+
+<h2 class="section-title">🏆 Key Achievements</h2>
+
+<div class="achievements">
+
+<div class="achievement">
+Built custom ERP systems used by business operations.
+</div>
+
+<div class="achievement">
+Designed REST API architecture for enterprise systems.
+</div>
+
+<div class="achievement">
+Automated operational workflows reducing manual processes.
+</div>
+
+<div class="achievement">
+Developed scalable backend systems for business automation.
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section class="container">
+
+<h2 class="section-title">📈 Experience</h2>
+
+<div class="experience-grid">
+
+<div class="experience-card">
+<h3>🧠 Senior Software Engineer</h3>
+<p>
+Designing and building enterprise-grade business systems with focus on
+scalable backend architecture, database design, and system integration
+across multiple business units. Experienced in translating complex
+business requirements into reliable technical solutions.
+</p>
+</div>
+
+<div class="experience-card">
+<h3>🏭 ERP System Developer</h3>
+<p>
+Led the development of custom ERP platforms for manufacturing and
+restaurant businesses. Integrated finance, inventory, production,
+and operational workflows into a unified system to improve operational
+efficiency and data accuracy.
+</p>
+</div>
+
+<div class="experience-card">
+<h3>⚙️ Automation Engineer</h3>
+<p>
+Built automation platforms including WhatsApp automation workflows,
+process automation tools, and system integrations that reduce manual
+operations and streamline business processes.
+</p>
+</div>
+
+<div class="experience-card">
+<h3>🗄 Backend & API Engineer</h3>
+<p>
+Designed and implemented RESTful APIs, scalable backend services,
+and database architectures supporting business applications and
+system integrations across multiple platforms.
+</p>
+</div>
+
+<div class="experience-card">
+<h3>📊 System Analyst</h3>
+<p>
+Collaborated with business stakeholders to gather user requirements,
+analyze operational workflows, and design structured system solutions
+that align with real-world business processes.
+</p>
+</div>
+
+<div class="experience-card">
+<h3>🚀 Technical Lead</h3>
+<p>
+Led engineering teams in designing scalable backend systems,
+overseeing software architecture, development workflow, and
+quality assurance processes. Responsible for aligning technical
+implementation with business goals while ensuring system reliability
+and maintainability.
+</p>
+</div>
+
+
+</div>
+
+</section>
+<!-- PROJECT -->
+
+<section class="container">
+
+<h2 class="section-title">🚀 Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<img src="images/custom-erp.webp" height="253px">
+
+<div class="project-content">
+
+<h3>Custom ERP System</h3>
+
+<p>Custom ERP System is a tailored enterprise solution designed to streamline and integrate core business operations within a single unified platform.</p>
+<br><br>
+<div class="project-meta">
+<b>Tech Stack:</b> CodeIgniter, MariaDB, REST API
+</div>
+
+<div class="project-meta">
+<b>Role:</b> System Architect & Lead Developer
+</div>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="images/whatsapp-automation-platform.png">
+
+<div class="project-content">
+
+<h3>WhatsApp Automation Platform</h3>
+
+<p>Automated follow-up messaging using the whatsapp-web.js library, sending text messages, images, documents, and audio/video files to registered users regarding follow-up content that has been written and stored in the database.</p>
+<br>
+<div class="project-meta">
+<b>Tech Stack:</b> Node.js, Whatsapp-web.js Library
+</div>
+
+<div class="project-meta">
+<b>Role:</b> Fullstack Developer
+</div>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="images/mlm-binary.png" height="253px">
+
+<div class="project-content">
+
+<h3>MLM Web Application</h3>
+
+<p>This MLM Web Application is a web-based system built on a binary MLM structure, designed to manage member networks, calculate commissions, and distribute bonuses automatically with transparency.</p>
+<br>
+
+<div class="project-meta">
+<b>Tech Stack:</b> Codeigniter, MariaDB, JQuery
+</div>
+
+<div class="project-meta">
+<b>Role:</b> Fullstack Developer</div>
+
+</div>
+
+</div>
+
+
+<div class="project">
+
+<img src="images/web-automation.jpeg" height="253px">
+
+<div class="project-content">
+
+<h3>Web Automation</h3>
+
+<p>The Web Automation system is a scheduled automation platform designed to execute recurring tasks for multiple user accounts independently. Each account operates on its own cycle, where automated processes are triggered every hour based on the last access time of the respective user.</p>
+<br>
+
+<div class="project-meta">
+<b>Tech Stack:</b> Node.js, Selenium, MariaDB, Ubuntu Server
+</div>
+
+<div class="project-meta">
+<b>Role:</b> Developer</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>📬 Contact</h2>
+
+<p>Email: c.purnomo@email.com</p>
+<p>Whatsapp: <a href="https://wa.me/6287872592559">+62 878-7259-2559</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/cahyop">linkedin.com/in/cahyop</a></p>
+<p>GitHub: <a href="https://github.com/cahyopurnomo">https://github.com/cahyopurnomo</a></p>
+
+</section>
+
+<footer>
+
+© 2026 Cahyo Purnomo
+
+</footer>
+
+</body>
+</html>
